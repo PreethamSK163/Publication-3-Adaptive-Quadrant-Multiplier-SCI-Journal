@@ -24,7 +24,7 @@
 ## 👥 Authors
 
 | Name | Affiliation |
-|:---|:---|:---|
+|:---|:---|
 | Adhiyamaan | School of Electrical Engineering, VIT Chennai |
 | **Preetham SK** | School of Electrical Engineering, VIT Chennai |
 | Dr. S. Umadevi | Associate Professor (Senior), CNVD, VIT Chennai |
