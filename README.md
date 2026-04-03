@@ -23,7 +23,7 @@
 
 ## 👥 Authors
 
-| Name | Affiliation | Role |
+| Name | Affiliation |
 |:---|:---|:---|
 | Adhiyamaan | School of Electrical Engineering, VIT Chennai |
 | **Preetham SK** | School of Electrical Engineering, VIT Chennai |
