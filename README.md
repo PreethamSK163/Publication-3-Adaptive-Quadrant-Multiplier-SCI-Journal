@@ -51,15 +51,15 @@ Existing multiplier architectures collectively exhibit these limitations:
 
 ## 💡 Proposed Architecture
 
-### Quadrant Decomposition
+### 1. Quadrant Decomposition
 Each 2^N × 2^N multiplication is decomposed into four independent sub-multiplications. For N=4 (16×16 operation), operand A is split into lower half P and upper half Q; operand B into lower half R and upper half S. Four partial products — F = P×R, G = Q×R, H = P×S, I = Q×S — are computed in parallel using an 8×8 bypassing multiplier as the fundamental building block.
 
 The same 8×8 module is reused across all four quadrant operations — keeping the architecture modular and scalable to higher bit-widths without structural modification.
 
-### Row Bypassing Scheme
+### 2. Row Bypassing Scheme
 The bypassing mechanism detects zero-valued bits in the multiplicand and disables the corresponding partial product rows — directly suppressing unnecessary switching activity and reducing dynamic power consumption while preserving full computational accuracy.
 
-### Two Adder Variants
+### 3. Two Adder Variants
 
 **AQ1 — Ripple Carry Adder (RCA) with Bypassing:**
 Partial products F, G, H, and I are accumulated through four 2^(N-1) bit Ripple Carry Adders. The structured chaining of RCAs guarantees correct carry propagation while maintaining compact, area-efficient hardware implementation. RCA is selected for its minimal routing complexity and lower power consumption — making AQ1 suitable for power-sensitive applications such as wearables and IoT.
